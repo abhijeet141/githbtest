@@ -1,0 +1,17 @@
+name: Auto Close Issues
+
+on:
+  pull_request:
+    types: [closed]
+    branches :
+      - master
+jobs:
+  close:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: bubkoo/auto-close-fixed-issues@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          comment: 'This issue was closed by #{{ pr }}.'
+          # default ignore the pr merge to the default branch
+          # ignore: true
