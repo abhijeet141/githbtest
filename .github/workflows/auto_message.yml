@@ -15,5 +15,5 @@ jobs:
       with:
         respondableId: ${{ github.event.pull_request.node_id }}
         response: "Thank you"
-        author: ${{ github.event.issue.user.login }}
+        author: ${{ github.event.pull_request.user.login }}
         exemptedAuthors: "Sairish"
