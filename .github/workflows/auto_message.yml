@@ -14,5 +14,5 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         respondableId: ${{ github.event.pull_request.node_id }}
-        response: "  Thank you @${{github.actor}} for taking out your time and contributing to our project."
+        response: "Thank you @${{github.actor}} for taking out your valuable time in order to contribute to our project. Looking forward for more such amazing contributions :)"
         author: ${{ github.event.pull_request.user.login }}
