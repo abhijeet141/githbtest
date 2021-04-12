@@ -1,18 +1,18 @@
-name: Auto Close Issues
+name: Close issues related to a merged pull request based on master branch.
 
 on:
   pull_request:
     types: [closed]
-    branches :
+    branches:
       - master
+
 jobs:
-  close:
+  closeIssueOnPrMergeTrigger:
+
     runs-on: ubuntu-latest
+
     steps:
-      - uses: bubkoo/auto-close-fixed-issues@v1
-        with:
+      - name: Closes issues related to a merged pull request.
+        uses: ldez/gha-mjolnir@v1.0.3
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          comment: 'This issue was closed by #{{ pr }}.'
-          comment: 'This issue was closed by #{{ pr }}.'
-          default ignore the pr merge to the default branch
-          ignore: true
