@@ -1,4 +1,4 @@
-name: Issue Autoresponse
+name: yo
 
 on:
   pull_request:
