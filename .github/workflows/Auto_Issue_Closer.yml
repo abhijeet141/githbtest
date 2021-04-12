@@ -13,5 +13,6 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           comment: 'This issue was closed by #{{ pr }}.'
-          # default ignore the pr merge to the default branch
-          # ignore: true
+          comment: 'This issue was closed by #{{ pr }}.'
+          default ignore the pr merge to the default branch
+          ignore: true
