@@ -9,8 +9,6 @@ ll
 
 I am Abhijeet
 
-asd
-
 lalaa neo
 
 lalalulu
